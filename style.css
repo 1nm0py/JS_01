@@ -116,7 +116,7 @@ body {
 
 .container.active .weather-box .box .info-weather,
 .container.active .weather-details .humidity .info-humidity,
-.container.active .weather-details .wind .info-wind{
+.container.active .weather-details .wind .info-wind {
     transform: translateY(0%);
     transition: 1s ease;
 }
@@ -142,7 +142,7 @@ body {
 .weather-box .description {
     font-size: 22px;
     font-weight: 500;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 .weather-details {
@@ -227,34 +227,34 @@ body {
 
 #clone-info-weather,
 #clone-info-humidity,
-#clone-info-wind{
+#clone-info-wind {
     position: absolute;
     transform: translateY(-100%);
     /* background: seagreen; */
 }
 
-#clone-info-weather .weather{
+#clone-info-weather .weather {
     transform: translateY(120%);
     transition: transform 1s ease, opacity 0s;
     transition-delay: 0s, 2s;
 }
 
-.weather-box:not(.active) #clone-info-weather .weather{
+.weather-box:not(.active) #clone-info-weather .weather {
     opacity: 0;
     transition-delay: 0s;
 }
 
-.active-clone#clone-info-weather .weather{
+.active-clone#clone-info-weather .weather {
     transform: translateY(0%);
 }
 
 #clone-info-humidity span,
-#clone-info-wind span{
+#clone-info-wind span {
     transform: translateY(100%);
     transition: transform 1s ease;
 }
 
 .active-clone#clone-info-humidity span,
-.active-clone#clone-info-wind span{
+.active-clone#clone-info-wind span {
     transform: translateY(0%);
 }
